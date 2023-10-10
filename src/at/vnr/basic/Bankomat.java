@@ -12,8 +12,6 @@ public class Bankomat {
 
         while(Abbruch) {
 
-
-
             System.out.println("1. Einzahlen");
             System.out.println("2. Abheben");
             System.out.println("3. Kontostand");
@@ -54,10 +52,8 @@ public class Bankomat {
 
                 System.out.println("Falsche Eingabe!");
             }
-            System.out.println("Anderung");
 
         }
-
 
     }
 }
