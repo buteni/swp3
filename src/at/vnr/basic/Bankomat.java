@@ -8,7 +8,7 @@ public class Bankomat {
         Scanner scanner = new Scanner(System.in);
 
         boolean Abbruch = true;
-        int iKontostand = 0;
+        double dKontostand = 0;
 
         while(Abbruch) {
 
@@ -23,8 +23,8 @@ public class Bankomat {
             if (Auswahl == 1) {
 
                 System.out.println("Geben Sie ein, wieviel Sie einzahlen wollen:");
-                int betrag = scanner.nextInt();
-                iKontostand += betrag;
+                double betrag = scanner.nextDouble();
+                dKontostand += betrag;
                 System.out.println("Sie haben " + betrag + " Euro eingezahlt");
 
             } else if (Auswahl == 2) {
@@ -32,8 +32,8 @@ public class Bankomat {
                 System.out.println("Geben Sie ein, wieviel Sie abheben wollen:");
                 double betrag = scanner.nextDouble();
 
-                if (betrag <= iKontostand) {
-                    iKontostand = (int) (iKontostand - betrag);
+                if (betrag <= dKontostand) {
+                    dKontostand = (int) (dKontostand - betrag);
                     System.out.println("Sie haben " + betrag + " Euro abgehoben");
 
                 } else {
@@ -42,7 +42,7 @@ public class Bankomat {
 
             } else if (Auswahl == 3) {
 
-                System.out.println("Ihr Kontostand beträgt: " + iKontostand);
+                System.out.println("Ihr Kontostand beträgt: " + dKontostand);
             } else if (Auswahl == 4) {
 
                 Abbruch = false;
