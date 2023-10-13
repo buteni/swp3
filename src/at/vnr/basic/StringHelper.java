@@ -6,4 +6,15 @@ public class StringHelper {
 
         return false;
     }
+
+    public static int countletters (String text, char search) {
+
+
+
+        return -1;
+    }
+
+
+
+
 }
