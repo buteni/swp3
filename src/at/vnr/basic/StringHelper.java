@@ -9,8 +9,6 @@ public class StringHelper {
 
     public static int countletters (String text, char search) {
 
-
-
         return -1;
     }
 
