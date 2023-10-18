@@ -1,18 +1,34 @@
 package at.vnr.basic;
 
 public class StringHelper {
-    public static boolean isPalindrome (String text) {
+    public static int countLetters(String inputString, char targetChar) {
+        int count = 0;
 
+        for (int i = 0; i < inputString.length(); i++) {
+            if (inputString.charAt(i) == targetChar) {
+                count++;
+            }
+        }
 
-        return false;
+        return count;
     }
 
-    public static int countletters (String text, char search) {
 
-        return -1;
+
+    public static void main(String[] args) {
+        String input = "Hello World";
+
+        char target = 'o';
+
+        int ergebnis = countLetters(input, target);
+
+        System.out.println("Der Charakter '" + target + "' kommt " + ergebnis + " vor.");
     }
-
-
-
-
 }
+
+
+
+
+
+
+
