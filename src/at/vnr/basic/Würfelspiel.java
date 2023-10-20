@@ -13,7 +13,7 @@ public class Würfelspiel {
         int winsofplayer = 0;
         int winsofcomputer = 0;
         int unentschieden = 0;
-        char Abbruch = ' ';
+
 
         int abbruch;
         do {
