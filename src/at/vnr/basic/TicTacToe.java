@@ -20,6 +20,7 @@ public class TicTacToe {
         do
         {
 
+
             System.out.println("Spieler X, gebe deine Koordinate ein:");
 
 
