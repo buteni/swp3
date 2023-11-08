@@ -1,4 +1,4 @@
-package at.vnr.basic;
+package struct;
 
 public class ControlStructurs7 {
     public static void main(String[] args) {

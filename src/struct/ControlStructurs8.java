@@ -1,4 +1,4 @@
-package at.vnr.basic;
+package struct;
 
 import java.util.Random;
 

@@ -1,4 +1,4 @@
-package at.vnr.basic;
+package struct;
 
 public class StringHelper {
     public static int countLetters(String inputString, char targetChar) {
