@@ -7,7 +7,6 @@ public class Getraenkekiste {
     private Flasche flasche;
 
 
-
     public Getraenkekiste(int iAnzahl, Flasche flasche) {
         this.iAnzahl = iAnzahl;
         this.flasche = flasche;

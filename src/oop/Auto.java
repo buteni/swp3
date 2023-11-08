@@ -5,7 +5,6 @@ public class Auto {
     private String sFarbe = "keine Farbe";
 
 
-
     private Fahrrad kofferraumfahrrad;
 
 
