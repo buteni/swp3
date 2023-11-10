@@ -1,4 +1,4 @@
-package oop;
+package oop.einfuehrung;
 
 public class TestIT {
     public static void main(String[] args) {
@@ -30,17 +30,26 @@ public class TestIT {
 
 
 
+
+
+
         //Flasche
 
         Flasche flasche = new Flasche("Cola", 500, "cola zero");
         System.out.println("Flasche: \n");
         System.out.println(flasche.getHersteller() + " " + flasche.getVolumen() + " " + flasche.getGefuelltmit() + "\n");
 
+        //Flasche1
+
+        Flasche flasche1 = new Flasche("voüs", 330, "cola");
+
+
 
         //Getraenkekiste
         Getraenkekiste getraenkekiste = new Getraenkekiste(1, flasche );
         System.out.println("Getraenkekiste: \n");
         System.out.println(getraenkekiste.getiAnzahl() + " " + flasche.getGefuelltmit());
+
 
 
 

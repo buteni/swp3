@@ -1,4 +1,4 @@
-package oop;
+package oop.einfuehrung;
 
 public class Flasche {
 
