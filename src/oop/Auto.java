@@ -1,11 +1,16 @@
 package oop;
 
+
+import java.util.ArrayList;
+
 public class Auto {
     private int iLeistung = 0;
     private String sFarbe = "keine Farbe";
 
 
     private Fahrrad kofferraumfahrrad;
+
+    private ArrayList<Getraenkekiste> KofferraumGetraenke;
 
 
     public Fahrrad getKofferraumfahrrad() {

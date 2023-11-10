@@ -25,6 +25,7 @@ public class TestIT {
         System.out.println(fahrrad.getiPreis() + " " + fahrrad.getsFarbe() + " " + fahrrad.getsMarke());
 
         auto.setKofferraumfahrrad(fahrrad);
+        //auto.setKofferraumGetraenke(getraenkekiste);
 
 
 
