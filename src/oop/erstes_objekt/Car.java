@@ -14,6 +14,11 @@ public class Car {
 
     public int maxfuelvolume;
 
+    public int amountOfRepititions;
+
+    public double fuelcosumptionperkilometer;
+
+    public double restrange;
 
     //Methode
     public void drive() {
@@ -26,9 +31,32 @@ public class Car {
     }
 
     public void turboboost() {
-        if(this.fuelamount >= this.maxfuelvolume ) {
-            System.out.println("");
+        if(this.fuelamount >= 0.1 * this.maxfuelvolume ) {
+            System.out.println("SuperBoostMode");
+        }
+        else {
+
+            System.out.println("Not enough fuel to go Superboost");
         }
 
     }
+
+    public void honk() {
+
+        for (int i = 0; i < this.amountOfRepititions ; i++) {
+
+            System.out.println("Tuuut");
+        }
+
+    }
+
+    public void getremainingRange() {
+
+        this.restrange = this.fuelamount / this.fuelcosumptionperkilometer;
+
+        System.out.println("Das Auto fährt noch " + this.restrange + " km");
+
+    }
+
+
 }
