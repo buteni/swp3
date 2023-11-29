@@ -7,15 +7,23 @@ public class Main {
 
         //Car 1
 
-        Car c1 = new Car();
-        c1.brand = "Audi";
-        c1.color = "red";
-        c1.fuelcosumption = 7;
-        c1.serialnumber = "A1234";
+
+        Engine engine = new Engine(300,Engine.TYPE.DIESEL );
+        /*
+        c1.setBrand("Audi");
+        c1.setFuelcosumption(18);
+        c1.setColor("grey");
+        c1.setSerialnumber("523759AT");
         c1.fuelamount = 70;
         c1.maxfuelvolume = 110;
         c1.amountOfRepititions = 2;
         c1.fuelcosumptionperkilometer = 0.3;
+
+
+
+        System.out.println("Color: " + c1.getColor() + " Serialnumber: " + c1.getSerialnumber() + " FuelConsumption: " + c1.getFuelcosumption() + " Brand: " + c1.getBrand());
+
+        /*
 
         //Car 2
 
@@ -24,12 +32,15 @@ public class Main {
         c2.color = "grey";
         c2.fuelcosumption = 6;
         c2.serialnumber = "M1234";
+
         c2.fuelamount = 30;
         c2.maxfuelvolume = 90;
         c2.amountOfRepititions = 4;
         c2.fuelcosumptionperkilometer = 0.3;
 
+        */
 
+        /*
 
         //Fahren
         System.out.println(c2.fuelamount);
@@ -49,5 +60,18 @@ public class Main {
         //Restweg
 
         c2.getremainingRange();
+
+
+        //Car 3
+
+
+        Car c3 = new Car(18, "Audi", "3479436A");
+
+        System.out.println(c3.serialnumber);
+
+         */
+
+
+
     }
 }

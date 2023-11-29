@@ -2,7 +2,7 @@ package struct;
 
 public class CaesarVerschluesselung {
     public static void main(String[] args) {
-        String result = encrypt(1, "z z z");
+        String result = encrypt(1, "Apfel");
         System.out.println(result);
     }
 

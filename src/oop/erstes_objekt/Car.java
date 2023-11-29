@@ -2,15 +2,19 @@ package oop.erstes_objekt;
 
 public class Car {
 
-    public int fuelcosumption;
+    private Engine engine;
 
-    public int fuelamount;
+    private int horsepower;
 
-    public String brand;
+    private int fuelcosumption;
 
-    public String serialnumber;
+    private int fuelamount;
 
-    public String color;
+    private String brand;
+
+    private String serialnumber;
+
+    private String color;
 
     public int maxfuelvolume;
 
@@ -19,6 +23,17 @@ public class Car {
     public double fuelcosumptionperkilometer;
 
     public double restrange;
+
+
+
+    public Car(Engine engine, int fuelcosumption, String brand, String serialnumber) {
+        this.engine = engine;
+        this.fuelcosumption =fuelcosumption;
+        this.brand = brand;
+        this.serialnumber = serialnumber;
+    }
+
+
 
     //Methode
     public void drive() {
@@ -58,5 +73,44 @@ public class Car {
 
     }
 
+    public void setFuelcosumption(int fuelcosumption) {
+        this.fuelcosumption = fuelcosumption;
+    }
 
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public void setSerialnumber(String serialnumber) {
+        this.serialnumber = serialnumber;
+    }
+
+    public int getFuelcosumption() {
+        return fuelcosumption;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public String getSerialnumber() {
+        return serialnumber;
+    }
+
+
+    public Engine getEngine() {
+        return engine;
+    }
+
+    public void setEngine(Engine engine) {
+        this.engine = engine;
+    }
 }
