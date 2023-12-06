@@ -8,7 +8,16 @@ public class Main {
         //Car 1
 
 
-        Engine engine = new Engine(300,Engine.TYPE.DIESEL );
+        Engine e1 = new Engine(300,Engine.TYPE.DIESEL, 40 );
+
+        System.out.println(e1.getHorsePower() +  " Hp " + e1.getType() + "Typ " + e1.getSpeed() );
+
+        Car c4 = new Car(e1, 30, "Audi", "A34539HGOA" );
+
+        c4.speedzone();
+
+
+
         /*
         c1.setBrand("Audi");
         c1.setFuelcosumption(18);

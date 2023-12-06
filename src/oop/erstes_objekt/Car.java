@@ -2,7 +2,12 @@ package oop.erstes_objekt;
 
 public class Car {
 
+    private Tank tank;
+
+
     private Engine engine;
+
+    public int speed;
 
     private int horsepower;
 
@@ -31,6 +36,7 @@ public class Car {
         this.fuelcosumption =fuelcosumption;
         this.brand = brand;
         this.serialnumber = serialnumber;
+
     }
 
 
@@ -39,6 +45,31 @@ public class Car {
     public void drive() {
         this.fuelamount = this.fuelamount - this.fuelcosumption;
         System.out.println("I am driving");
+    }
+
+    public void speedzone() {
+
+        if (getEngine().getSpeed() > 100) {
+
+            System.out.println("Out of range");
+        }
+        else if(getEngine().getSpeed() > 75) {
+
+            System.out.println("Vollgas");
+        }
+        else if(getEngine().getSpeed() > 50 ) {
+
+            System.out.println("Normal");
+
+        }
+        else if (getEngine().getSpeed() < 50) {
+
+            System.out.println("Langsam");
+        }
+
+
+
+
     }
 
     public void bremsen() {
@@ -72,6 +103,8 @@ public class Car {
         System.out.println("Das Auto fährt noch " + this.restrange + " km");
 
     }
+
+
 
     public void setFuelcosumption(int fuelcosumption) {
         this.fuelcosumption = fuelcosumption;
@@ -112,5 +145,13 @@ public class Car {
 
     public void setEngine(Engine engine) {
         this.engine = engine;
+    }
+
+    public Tank getTank() {
+        return tank;
+    }
+
+    public void setTank(Tank tank) {
+        this.tank = tank;
     }
 }

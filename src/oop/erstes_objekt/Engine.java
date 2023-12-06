@@ -7,9 +7,12 @@ public class Engine {
     private int horsePower;
     private TYPE type;
 
-    public Engine(int horsePower, TYPE type) {
+    private int speed;
+
+    public Engine(int horsePower, TYPE type, int speed) {
         this.horsePower = horsePower;
         this.type = type;
+        this.speed = speed;
     }
 
     public void drive(int amount) {
@@ -25,5 +28,11 @@ public class Engine {
     public TYPE getType() {
         return type;
     }
+
+    public int getSpeed() {
+        return speed;
+    }
+
+
 }
 
