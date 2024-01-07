@@ -7,7 +7,7 @@ public class Würfel extends Figuren{
 
     public void Fleache(double Laenge){
         double Flaecheninhalt = 0;
-        Flaecheninhalt = Laenge * Laenge;
+        Flaecheninhalt = Laenge * Laenge * 6;
         System.out.println("Flaecheninhalt: " + Flaecheninhalt);
     }
 }
