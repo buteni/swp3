@@ -1,6 +1,4 @@
-package oop.erstes_objekt;
-
-import oop.erstes_objekt.Car;
+package oop.Auto;
 
 public class Main {
     public static void main(String[] args) {

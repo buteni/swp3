@@ -1,4 +1,4 @@
-package oop.erstes_objekt;
+package oop.Auto;
 
 public class Tank {
     public int Fuelamount;
